@@ -1,22 +1,23 @@
-# Classificação de Flores (Iris)
+#  Classificação de Flores Iris com Regressão Logística
 
-Projeto em Python usando Machine Learning para classificar espécies de flores com base no dataset Iris.
+Este projeto implementa um modelo de Machine Learning Supervisionado para classificar três espécies diferentes de flores Iris (Setosa, Versicolor e Virginica) com base em suas medidas morfológicas.
 
-## Como rodar
+##  O Problema
+Dado o comprimento e a largura das sépalas e pétalas, o objetivo é identificar corretamente a espécie da planta. Este é um problema clássico de **Classificação Multiclasse**.
+
+##  Tecnologias e Bibliotecas
+- **Python 3**
+- **Scikit-learn:** Para o modelo de Regressão Logística e métricas de avaliação.
+- **Pandas:** Para manipulação dos dados estruturados.
+- **Iris Dataset:** Conjunto de dados nativo da biblioteca sklearn.
+
+##  Fluxo de Trabalho
+1. **Pré-processamento:** Divisão dos dados em 80% para treinamento e 20% para teste.
+2. **Modelagem:** Uso do algoritmo de Regressão Logística.
+3. **Avaliação:** Cálculo de acurácia e análise de Precisão/Recall via `classification_report`.
+4. **Predição:** Interface simples para testar novas entradas de dados.
+
+##  Como Executar
 1. Instale as dependências:
-   pip install -r requirements.txt
-
-2. Execute:
-   python main.py
-
-## O que o código faz
-- Carrega o conjunto de dados Iris.
-- Treina um modelo de Regressão Logística.
-- Mede a acurácia.
-- Faz uma previsão de exemplo.
-
-## Arquivos
-- main.py — código principal
-- requirements.txt — dependências
-- README.md — instruções
-- .gitignore — arquivos ignorados no repositório
+   
+   pip install pandas scikit-learn
